@@ -1,9 +1,11 @@
 import express from 'express';
 
+import productRouter from './routes/Product.route';
+
 const app = express();
 
-// init
-
 app.use(express.json());
+
+app.use(productRouter);
 
 export default app;
